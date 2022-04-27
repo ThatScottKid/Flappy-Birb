@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Pause();
+        obstSpeed.value = 1;
     }
 
     public void bumpSpeed(float amount)

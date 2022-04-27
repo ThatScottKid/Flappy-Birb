@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float jumpHeight; //8f
+    public AudioEvent flapAudioEvent;
+    public AudioSource flapAudioSource;
     
     public UnityEvent scorePoint;
     public UnityEvent playerDied;
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb.velocity = new Vector2(0, jumpHeight);
+            flapAudioEvent.Play(flapAudioSource);
         }
     }
 
