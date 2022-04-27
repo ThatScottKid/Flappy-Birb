@@ -9,6 +9,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpHeight; //8f
     public AudioEvent flapAudioEvent;
     public AudioSource flapAudioSource;
+    public AudioEvent pointAudioEvent;
+    public AudioSource pointAudioSource;
+    public AudioEvent deathAudioEvent;
+    public AudioSource deathAudioSource;
+    
+
     
     public UnityEvent scorePoint;
     public UnityEvent playerDied;
@@ -38,12 +44,12 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         playerDied.Invoke();
-        Debug.Log("Collided");
+        deathAudioEvent.Play(deathAudioSource);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         scorePoint.Invoke();
-        Debug.Log("Score+");
+        pointAudioEvent.Play(pointAudioSource);
     }
 }

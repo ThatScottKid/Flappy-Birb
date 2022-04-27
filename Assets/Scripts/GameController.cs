@@ -21,7 +21,6 @@ public class GameController : MonoBehaviour
         if(score.value % 10 == 0 && score.value != 0)
         {
             obstSpeed.value += amount;
-            Debug.Log("BUMP");
         }
     }
 

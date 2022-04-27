@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7486271f2429c40d5923b05599036956, type: 3}
+  m_Name: Audio-Flap
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 540ff9711e84259458053e5c019a2f79, type: 3}
+  - {fileID: 8300000, guid: 9d8f95e86570a974c8381c45a6d49dd3, type: 3}
+  - {fileID: 8300000, guid: a32c747d189288b4c827b4a05bf81454, type: 3}
+  - {fileID: 8300000, guid: f829c11d381e14e4b9d604a8e02efc7a, type: 3}
+  - {fileID: 8300000, guid: 08bd80e75b19a9046a15df386037b6b1, type: 3}
+  - {fileID: 8300000, guid: 2811570e29eb53949857bcfa2ba7cc08, type: 3}
+  volume: 1
+  pitch: 0.75
