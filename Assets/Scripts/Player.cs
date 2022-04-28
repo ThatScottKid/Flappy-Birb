@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
+    
     [SerializeField] private float jumpHeight; //8f
     public AudioEvent flapAudioEvent;
     public AudioSource flapAudioSource;
@@ -14,8 +16,6 @@ public class Player : MonoBehaviour
     public AudioEvent deathAudioEvent;
     public AudioSource deathAudioSource;
     
-
-    
     public UnityEvent scorePoint;
     public UnityEvent playerDied;
 
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void OnEnable()
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(0, jumpHeight);
             flapAudioEvent.Play(flapAudioSource);
+            
         }
     }
 
