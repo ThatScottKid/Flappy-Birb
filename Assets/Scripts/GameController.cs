@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private FloatVariable obstSpeed;
+    [SerializeField] private FloatVariable obstSpeed, generationRate;
     [SerializeField] private IntVariable score;
 
 
@@ -13,7 +13,6 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Pause();
-        obstSpeed.value = 1;
     }
 
     public void bumpSpeed(float amount)
@@ -21,6 +20,7 @@ public class GameController : MonoBehaviour
         if(score.value % 10 == 0 && score.value != 0)
         {
             obstSpeed.value += amount;
+            generationRate.value = generationRate.value -= 0.1f;
         }
     }
 
@@ -37,6 +37,8 @@ public class GameController : MonoBehaviour
     public void Play()
     {
         Resume();
+        obstSpeed.value = 1f;
+        generationRate.value = 1.1f;
     }
 
     public void GameOver()
