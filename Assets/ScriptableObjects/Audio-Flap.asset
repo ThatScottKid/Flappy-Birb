@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Audio-Flap
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 540ff9711e84259458053e5c019a2f79, type: 3}
-  - {fileID: 8300000, guid: 9d8f95e86570a974c8381c45a6d49dd3, type: 3}
-  - {fileID: 8300000, guid: a32c747d189288b4c827b4a05bf81454, type: 3}
-  - {fileID: 8300000, guid: f829c11d381e14e4b9d604a8e02efc7a, type: 3}
-  - {fileID: 8300000, guid: 08bd80e75b19a9046a15df386037b6b1, type: 3}
-  - {fileID: 8300000, guid: 2811570e29eb53949857bcfa2ba7cc08, type: 3}
+  - {fileID: 8300000, guid: aed279fd8c2eaac40a7629be46abc969, type: 3}
+  - {fileID: 8300000, guid: 1ba0a6f04289a90448c8a01ae0f69880, type: 3}
+  - {fileID: 8300000, guid: 17ffda61f6d1fb948a3971fce5dde6b5, type: 3}
+  - {fileID: 8300000, guid: d6ff095906267a045a33d65500a02225, type: 3}
+  - {fileID: 8300000, guid: 071ab653a47ad44409441d46152d98e4, type: 3}
   volume: 1
   pitch: 0.75

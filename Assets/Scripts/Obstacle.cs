@@ -9,7 +9,8 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x - obstSpeed.value, transform.position.y), 0.1f);
+        transform.position = Vector2.Lerp(transform.position, new Vector2
+        (transform.position.x - obstSpeed.value, transform.position.y), 0.1f);
     }
 
     public void ManageSpeed(int amount, IntVariable score)
@@ -17,7 +18,6 @@ public class Obstacle : MonoBehaviour
         if (score.value % 10 == 0)
         {
             obstSpeed.value *= amount;
-            Debug.Log("BUMP");
         }
     }
 }

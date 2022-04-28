@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Audio-Score
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: b726575d1445ba44e8ce0030532d1435, type: 3}
-  - {fileID: 8300000, guid: 645359953a7c7664bb69037d41d89efd, type: 3}
-  - {fileID: 8300000, guid: 6a686e21fc620844e9f7ce588feca841, type: 3}
-  - {fileID: 8300000, guid: e0b88d3785bf9ba43afeb56bb1fdd04d, type: 3}
+  - {fileID: 8300000, guid: 505ec81e33a458b4ab1e79cbb13701b4, type: 3}
+  - {fileID: 8300000, guid: 5b743dde3b64d9c46963b26b7d69f0d7, type: 3}
+  - {fileID: 8300000, guid: 63c9c21cc98d33947be9fd71c108bd19, type: 3}
   volume: 0.5
   pitch: 0.9

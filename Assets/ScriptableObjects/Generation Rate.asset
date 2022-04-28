@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e0856178edc4d97b28ccd96648a92f, type: 3}
   m_Name: Generation Rate
   m_EditorClassIdentifier: 
-  value: 1
+  value: 1.1

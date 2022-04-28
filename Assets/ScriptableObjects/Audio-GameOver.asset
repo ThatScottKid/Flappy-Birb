@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Audio-GameOver
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: fca948c533091ab45a9bb8c72cfbd82c, type: 3}
-  - {fileID: 8300000, guid: 19b0f723be323924fa94cb4b09676c37, type: 3}
-  - {fileID: 8300000, guid: 12d01673329c67e47bef34d7621f75d7, type: 3}
+  - {fileID: 8300000, guid: 70f59ed43022d6a45b588c89b3508f1b, type: 3}
+  - {fileID: 8300000, guid: b94b1b8000d74314092d5f9d02d5fd97, type: 3}
+  - {fileID: 8300000, guid: b5a09c0448db0924694248b8fda8745d, type: 3}
   volume: 0.5
   pitch: 1
