@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponentInChildren<SpriteRenderer>();
+        //sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void OnEnable()
