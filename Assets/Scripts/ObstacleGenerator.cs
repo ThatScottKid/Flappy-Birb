@@ -20,7 +20,7 @@ public class ObstacleGenerator : MonoBehaviour
         CancelInvoke(nameof(Generate));
     }
 
-    private void Generate()
+    private void Generate()     //Instantiate a new 'Pipe' prefab and give it a random height
     {
         GameObject newObstacle = Instantiate(obstaclePrefab, new Vector2(obstaclePrefab.transform.position.x,
                 obstaclePrefab.transform.position.y + Random.Range(minHeight, maxHeight)), obstaclePrefab.transform.rotation);
@@ -28,7 +28,7 @@ public class ObstacleGenerator : MonoBehaviour
         Destroy(newObstacle, 5f);
     }
 
-    public void ClearObstacles()
+    public void ClearObstacles()        //Destroys all 'Pipes' currently in game
     {
         Obstacle[] obstacles = FindObjectsOfType<Obstacle>();
         for (int i = 0; i < obstacles.Length; i++)

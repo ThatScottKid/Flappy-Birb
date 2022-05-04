@@ -10,7 +10,7 @@ public class Obstacle : MonoBehaviour
     private void FixedUpdate()
     {
         transform.position = Vector2.Lerp(transform.position, new Vector2
-        (transform.position.x - obstSpeed.value, transform.position.y), 0.1f);
+        (transform.position.x - obstSpeed.value, transform.position.y), 0.1f);      //'Pipes' always moving towards the left
     }
 
     public void ManageSpeed(int amount, IntVariable score)

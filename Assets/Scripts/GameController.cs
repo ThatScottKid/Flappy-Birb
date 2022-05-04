@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private FloatVariable obstSpeed, generationRate;
+    [SerializeField] private FloatVariable obstSpeed, generationRate;   //Speed and generation rate of 'Pipes'
     [SerializeField] private IntVariable score;
 
 
@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 
     public void bumpSpeed(float amount)
     {
-        if(score.value % 10 == 0 && score.value != 0)
+        if(score.value % 10 == 0 && score.value != 0)       //Is called whenever the player scores 10 points
         {
             obstSpeed.value += amount;
             generationRate.value = generationRate.value -= 0.1f;

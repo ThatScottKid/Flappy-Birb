@@ -6,15 +6,15 @@ using TMPro;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private GameObject upperUI;
-    [SerializeField] private TextMeshProUGUI scoreCounter;
+    [SerializeField] private TextMeshProUGUI scoreCounter;      //Score counter at the top of UI
 
-    [SerializeField] private GameObject introScreen;
-    [SerializeField] private GameObject restartScreen;
+    [SerializeField] private GameObject introScreen;        //Play sutton screen
+    [SerializeField] private GameObject restartScreen;      //Restart button screen
 
-    [SerializeField] private IntVariable score;
-    [SerializeField] private IntVariable highScore;
+    [SerializeField] private IntVariable score;         //Actual score
+    [SerializeField] private IntVariable highScore;     //Actual high score
 
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI scoreText;     //Score text which appears on Restart menu
     [SerializeField] private TextMeshProUGUI highScoreText;
 
 
